@@ -1,101 +1,68 @@
-# TrustLight
+# TrustLight 🟢🔴
+> *"When the lights go out, Gloria doesn't know which alert is real. TrustLight gives her the answer in under five seconds."*
 
-**On-device AI emergency alert verification system — concept proposal and research.**  
-PROPEL Future of Tech Innovation Challenge 2026 · Cybersecurity, Energy & Climate Resilience Track  
-Grambling State University · Patrick Ennin Selby & Emmanuel Akwasi Opoku
-
----
-
-## The Problem
-
-In 2035, AI can generate emergency alerts visually and linguistically identical to real ones. During grid failures, elderly adults living alone — like Gloria Woodson, 73, insulin-dependent, living alone in Savannah, Georgia — receive conflicting alerts on their phones: *Evacuate immediately. Stay indoors.* She cannot tell which is real. Her insulin has been in the refrigerator for six hours. Denise, her daughter, is three hours away in Atlanta and has no idea.
-
-That ten seconds of not knowing is where people make dangerous decisions.  
-**TrustLight eliminates that ten seconds — in under five.**
+**On-device AI emergency alert verification for elderly adults living alone.**  
+PROPEL Future of Tech Innovation Challenge 2026 · Cybersecurity, Energy & Climate Resilience Track
 
 ---
 
-## The Concept
+## The Problem in One Sentence
+During grid failures, AI-generated fake emergency alerts and real ones look identical — and for a 73-year-old living alone with insulin that expires in 4 hours, guessing wrong is fatal.
 
-TrustLight is an Apple Intelligence–powered on-device companion that gives elderly adults one clear answer when their phone lights up during an emergency.
+## The Solution in Two Signals
+TrustLight intercepts incoming alerts, verifies them on-device using Apple Intelligence in under 5 seconds, and delivers one of two answers:
 
-**Two signals only:**
-- 🟢 **GREEN** — Alert verified. Source confirmed. Act now.
-- 🔴 **RED** — Alert not verified. Do not act. TrustLight will update you immediately.
+| Signal | Meaning |
+|--------|---------|
+| 🟢 **GREEN** | Verified. Source confirmed. Act now. |
+| 🔴 **RED** | Unverified. Do not act. I'll update you immediately. |
 
-No middle state. No ambiguity. Gloria always has a clear instruction.
+No middle state. No ambiguity. No cloud. No data leaves her phone.
 
 ---
 
 ## How It Works
 
-1. **Intercept** — Emergency alert arrives on Gloria's iPhone
-2. **Verify** — Apple Intelligence analyzes source metadata, language patterns, and transmission pathway entirely on-device in under 5 seconds. WeatherKit cross-references local verified conditions for Savannah. No data leaves her iPhone.
-3. **Signal** — GREEN or RED delivered via Siri in plain language. If Gloria does not respond to a verified GREEN alert within 20 minutes, Denise receives one quiet iMessage: *Gloria may need you.*
+```
+Alert arrives → Apple Intelligence verifies source + language patterns
+             → WeatherKit cross-checks local conditions
+             → GREEN or RED delivered via Siri in plain language
+             → If no response in 20 min → Denise gets one quiet iMessage
+```
 
 ---
 
-## Apple Ecosystem Integration
+## Why It Matters
 
-| Technology | Role |
-|---|---|
-| Apple Intelligence | On-device private alert verification |
-| WeatherKit | Local condition cross-referencing |
-| HealthKit | Insulin countdown timer + heart rate awareness |
-| Siri | Voice-first plain-language guidance |
-| Apple Watch | Passive heart rate monitoring + haptic alerts |
-| iMessage | Silent family notification (Denise layer) |
-| Accessibility | Large text, high contrast, VoiceOver — elderly-first design |
+- **26.9 million** older adults in the US live alone
+- **AI incident reports** rose 50% in two years
+- Florida deployed **4,000+ AI-generated emergency messages** in one hurricane season
+- Insulin degrades above 77°F within **4–8 hours** of refrigeration loss
 
 ---
 
-## Research Foundation
+## Built On
 
-This proposal is grounded in 20+ peer-reviewed sources across five STEEP dimensions:
+`Apple Intelligence` &nbsp;`WeatherKit` &nbsp;`HealthKit` &nbsp;`Siri` &nbsp;`Apple Watch` &nbsp;`iMessage`
 
-- **Social:** 26.9M older adults in the US live alone. 114% increase in ER visits among adults 80+ during Hurricane Sandy outages vs. 11% decline in younger groups.
-- **Technological:** AI incident reports rose ~50% from 2022–2024. Florida deployed 4,000+ AI-generated emergency messages in one hurricane season.
-- **Economic:** US power interruptions cost ~$79B/year. Energy cost burden for adults 60+ is disproportionately high.
-- **Environmental:** Savannah, GA projected days above 96°F rising from ~7/year to ~39/year by 2050. 77% of Savannah buildings face flood risk.
-- **Political:** Emergency management experts recommend AI-based content-verification tools — no federal consumer-facing standard yet exists.
-
----
-
-## Design Decisions
-
-**Why binary GREEN/RED only?**  
-Gloria's crisis is uncertainty. A middle signal — "unconfirmed" — is just uncertainty with better branding. Under acute stress the human brain cannot process nuance. TrustLight's purpose is to eliminate the ten seconds of not knowing, not extend them with ambiguity.
-
-**Why on-device?**  
-Privacy is not a feature for Gloria — it is the foundation of trust. Apple Intelligence processes everything on her iPhone. Her crisis data never leaves her device.
-
-**Why voice-first?**  
-Under panic, reading is hard. Hearing is instinctive. Siri's calm tone is itself a stress-regulation tool.
-
----
-
-## Competition Submission
-
-- **Challenge:** PROPEL Future of Tech Innovation Challenge 2026
-- **Track:** Cybersecurity, Energy & Climate Resilience
-- **Team:** Patrick Ennin Selby (Research & Human-Centered Design) · Emmanuel Akwasi Opoku (AI Strategy & Apple Ecosystem)
-- **Status:** Concept proposal — submitted and reviewed by PROPEL judges
-
-> *"We come from places where the lights go out and nobody comes. TrustLight is what we wish existed."*  
-> — Patrick Selby & Mannie Opoku
+Everything runs on-device. Gloria's crisis data never leaves her iPhone.
 
 ---
 
 ## Repository Contents
 
-- `README.md` — This document
-- `TrustLight_PitchDeck.pdf` — Full pitch deck submitted to PROPEL judges
-- `TrustLight_MasterResearch_V4.pdf` — Complete research and strategy document including STEEP analysis, source bank, and system design
+- [`TrustLight_PitchDeck.pdf`](./TrustLight_PitchDeck.pdf) — Competition pitch deck
+- [`TrustLight_MasterResearch_V4.pdf`](./TrustLight_MasterResearch_V4.pdf) — Full research document with STEEP analysis and 20+ sources
 
 ---
 
-## Author
+## Team
+**Patrick Ennin Selby** — Research & Human-Centered Design  
+**Emmanuel Akwasi Opoku** — AI Strategy & Apple Ecosystem  
+Grambling State University
 
-**Patrick Ennin Selby**  
-B.S. Cybersecurity · Grambling State University  
-[LinkedIn](https://www.linkedin.com/in/patrick-ennin-selby-136253301) · [GitHub](https://github.com/pat-selby) · [Portfolio](https://pat-selby.github.io/Portfolio-v2)
+> *"We come from places where the lights go out and nobody comes. TrustLight is what we wish existed."*
+
+---
+
+[LinkedIn](https://www.linkedin.com/in/patrick-ennin-selby-136253301) &nbsp;·&nbsp; [Portfolio](https://pat-selby.github.io/Portfolio-v2) &nbsp;·&nbsp; [GitHub](https://github.com/pat-selby)
